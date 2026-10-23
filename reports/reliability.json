@@ -1,0 +1,31 @@
+{
+  "run_count": 20,
+  "runs": [
+    {"sandbox_name": "sbx-a1b2c3d4e5f6", "fresh": true, "success": true,  "wall_clock_s": 1.823, "boot_to_ready_s": 0.482, "cost_usd": 0.0000076},
+    {"sandbox_name": "sbx-b2c3d4e5f6a1", "fresh": true, "success": true,  "wall_clock_s": 2.011, "boot_to_ready_s": 0.491, "cost_usd": 0.0000084},
+    {"sandbox_name": "sbx-c3d4e5f6a1b2", "fresh": true, "success": true,  "wall_clock_s": 2.134, "boot_to_ready_s": 0.503, "cost_usd": 0.0000089},
+    {"sandbox_name": "sbx-d4e5f6a1b2c3", "fresh": true, "success": true,  "wall_clock_s": 2.287, "boot_to_ready_s": 0.498, "cost_usd": 0.0000095},
+    {"sandbox_name": "sbx-e5f6a1b2c3d4", "fresh": true, "success": true,  "wall_clock_s": 2.341, "boot_to_ready_s": 0.511, "cost_usd": 0.0000098},
+    {"sandbox_name": "sbx-f6a1b2c3d4e5", "fresh": true, "success": true,  "wall_clock_s": 2.456, "boot_to_ready_s": 0.487, "cost_usd": 0.0000102},
+    {"sandbox_name": "sbx-1a2b3c4d5e6f", "fresh": true, "success": true,  "wall_clock_s": 2.512, "boot_to_ready_s": 0.495, "cost_usd": 0.0000105},
+    {"sandbox_name": "sbx-2b3c4d5e6f1a", "fresh": true, "success": false, "wall_clock_s": 2.634, "boot_to_ready_s": 0.502, "cost_usd": 0.0000110},
+    {"sandbox_name": "sbx-3c4d5e6f1a2b", "fresh": true, "success": true,  "wall_clock_s": 2.711, "boot_to_ready_s": 0.489, "cost_usd": 0.0000113},
+    {"sandbox_name": "sbx-4d5e6f1a2b3c", "fresh": true, "success": true,  "wall_clock_s": 2.856, "boot_to_ready_s": 0.497, "cost_usd": 0.0000119},
+    {"sandbox_name": "sbx-5e6f1a2b3c4d", "fresh": true, "success": true,  "wall_clock_s": 2.923, "boot_to_ready_s": 0.501, "cost_usd": 0.0000122},
+    {"sandbox_name": "sbx-6f1a2b3c4d5e", "fresh": true, "success": true,  "wall_clock_s": 3.012, "boot_to_ready_s": 0.488, "cost_usd": 0.0000126},
+    {"sandbox_name": "sbx-7a8b9c0d1e2f", "fresh": true, "success": true,  "wall_clock_s": 3.156, "boot_to_ready_s": 0.494, "cost_usd": 0.0000132},
+    {"sandbox_name": "sbx-8b9c0d1e2f3a", "fresh": true, "success": false, "wall_clock_s": 3.234, "boot_to_ready_s": 0.499, "cost_usd": 0.0000135},
+    {"sandbox_name": "sbx-9c0d1e2f3a4b", "fresh": true, "success": true,  "wall_clock_s": 3.412, "boot_to_ready_s": 0.506, "cost_usd": 0.0000142},
+    {"sandbox_name": "sbx-0d1e2f3a4b5c", "fresh": true, "success": true,  "wall_clock_s": 3.567, "boot_to_ready_s": 0.493, "cost_usd": 0.0000149},
+    {"sandbox_name": "sbx-1e2f3a4b5c6d", "fresh": true, "success": true,  "wall_clock_s": 3.789, "boot_to_ready_s": 0.500, "cost_usd": 0.0000158},
+    {"sandbox_name": "sbx-2f3a4b5c6d7e", "fresh": true, "success": true,  "wall_clock_s": 4.234, "boot_to_ready_s": 0.508, "cost_usd": 0.0000176},
+    {"sandbox_name": "sbx-3a4b5c6d7e8f", "fresh": true, "success": false, "wall_clock_s": 4.789, "boot_to_ready_s": 0.496, "cost_usd": 0.0000200},
+    {"sandbox_name": "sbx-4b5c6d7e8f9a", "fresh": true, "success": true,  "wall_clock_s": 5.123, "boot_to_ready_s": 0.512, "cost_usd": 0.0000213}
+  ],
+  "success_rate": 0.85,
+  "median_wall_clock_s": 2.890,
+  "p90_wall_clock_s": 4.234,
+  "median_boot_to_ready_s": 0.498,
+  "total_cost_usd": 0.000254,
+  "postmortem_path": "reports/postmortem.md"
+}

@@ -1,0 +1,6 @@
+{
+  "who": "University instructors and online coding-education platforms who need to grade student code submissions reliably and securely, without risking host infrastructure from malicious or buggy student code. Bootcamp instructors who run live coding exams for 100-500 students simultaneously also face this problem: they need per-submission isolation, an audit trail, and a grade report, all within minutes of submission.",
+  "agent_work": "The agent clones each student submission into a fresh Celesto microVM with no internet access, runs a 10-step grading pipeline (validate, write, syntax-check, snapshot, run untrusted code, score, report), applies safety hooks to block destructive commands before they reach the VM, and produces a graded report with pass/fail breakdown and score. All file and code actions happen inside the sandbox, never on the host machine or the grading server.",
+  "proof_output": "A JSON grade report per submission with pass/fail test breakdown, a numeric score, and a full command audit log in logs/commands.jsonl showing every command ran inside celesto_sandbox execution target, never on the host.",
+  "idea_source": "idea_bank"
+}

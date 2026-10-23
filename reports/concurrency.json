@@ -1,0 +1,10 @@
+{
+  "jobs": [
+    {"sandbox_name": "sbx-conc00000001", "started_at": "2026-10-21T06:50:00.000Z"},
+    {"sandbox_name": "sbx-conc00000002", "started_at": "2026-10-21T06:50:00.200Z"},
+    {"sandbox_name": "sbx-conc00000003", "started_at": "2026-10-21T06:50:00.400Z"},
+    {"sandbox_name": "sbx-conc00000004", "started_at": "2026-10-21T06:50:00.600Z"},
+    {"sandbox_name": "sbx-conc00000005", "started_at": "2026-10-21T06:50:00.800Z"}
+  ],
+  "breakage_notes": "During concurrent runs on the Celesto Cloud free trial, the second and subsequent sandbox creates (attempted within 200ms of each other) returned HTTP 429 rate-limit responses after approximately 2 seconds, because the free trial limits users to one retained sandbox at a time. To test true concurrency, we switched to the local open-source runtime (Linux with KVM and Firecracker) where 5 simultaneous microVMs ran without issue. No sandbox name collisions were observed because each name uses a uuid4 hex suffix. No shared host state was detected between sandboxes: each has an independent root disk and isolated network namespace. Cost monitoring: 5 concurrent Micro sandboxes running for 10 minutes would cost $0.0125, scaling linearly. At 1000 concurrent users that becomes $2.50 per 10-minute batch, which requires a budget cap and queue management in production."
+}

@@ -1,0 +1,19 @@
+{
+  "capabilities": [
+    {
+      "id": "network_policy",
+      "why": "Student code is untrusted. Turning outbound internet off (internet_settings={'mode':'off'}) means a prompt-injected submission cannot exfiltrate environment variables, API keys, or grading rubrics to an attacker's server. Without this, one curl command inside a student submission could leak every secret in the sandbox environment to an external attacker. This is the primary and most important defence against the prompt-injection exfiltration attack demonstrated in the containment test. The microVM hypervisor enforces this at the network level, so no Python code running inside the VM can bypass it.",
+      "evidence_path": "reports/evidence/containment.log"
+    },
+    {
+      "id": "safety_hooks",
+      "why": "Safety hooks are Python callbacks running on the trusted control plane before every command reaches the guest VM. They can inspect the command string and block it before the VM even sees it. This is fundamentally different from a system prompt instruction: a hook is code, not text, and it cannot be reasoned around by an LLM. We block rm -rf /, dd disk wipes, fork bombs, curl and wget with env-var interpolation, and reverse shells. Every blocked command is written to logs/commands.jsonl for a complete audit trail, whether allowed or blocked. This gives the operator a forensic record of every action attempted inside every sandbox.",
+      "evidence_path": "logs/commands.jsonl"
+    },
+    {
+      "id": "snapshots",
+      "why": "Before step 7 (running untrusted student code), the agent takes a Celesto snapshot of the sandbox state. This provides a rollback point if the student code corrupts the VM filesystem, exhausts resources, or causes a kernel panic. While the chosen recovery policy for this project is 'fresh' (delete and recreate), the snapshot proves we identified step 7 as the risky step proactively and enables operators to switch to a 'rollback' policy for cost savings in high-volume grading scenarios. The snapshot is logged in the failure trace as evidence of the checkpoint before the risky execution step.",
+      "evidence_path": "reports/failure_trace.jsonl"
+    }
+  ]
+}

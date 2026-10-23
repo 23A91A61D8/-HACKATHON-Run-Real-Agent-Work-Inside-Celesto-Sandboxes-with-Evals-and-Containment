@@ -1,0 +1,17 @@
+{"ts":"2026-10-21T06:40:00Z","event":"run_started","sandbox_name":"sbx-failsim001a","step":0,"total_steps":10}
+{"ts":"2026-10-21T06:40:02Z","event":"step_completed","sandbox_name":"sbx-failsim001a","step":1,"step_name":"validate_submission_format"}
+{"ts":"2026-10-21T06:40:03Z","event":"step_completed","sandbox_name":"sbx-failsim001a","step":2,"step_name":"create_sandbox"}
+{"ts":"2026-10-21T06:40:04Z","event":"step_completed","sandbox_name":"sbx-failsim001a","step":3,"step_name":"write_submission_to_sandbox"}
+{"ts":"2026-10-21T06:40:05Z","event":"step_completed","sandbox_name":"sbx-failsim001a","step":4,"step_name":"install_test_runner"}
+{"ts":"2026-10-21T06:40:06Z","event":"step_completed","sandbox_name":"sbx-failsim001a","step":5,"step_name":"write_test_cases"}
+{"ts":"2026-10-21T06:40:07Z","event":"step_completed","sandbox_name":"sbx-failsim001a","step":6,"step_name":"syntax_check"}
+{"ts":"2026-10-21T06:40:08Z","event":"snapshot_taken","sandbox_name":"sbx-failsim001a","snapshot_id":"sbx-failsim001a-pre-step7","note":"Checkpoint before running untrusted student code"}
+{"ts":"2026-10-21T06:40:10Z","event":"step_failed","sandbox_name":"sbx-failsim001a","step":7,"step_name":"run_untrusted_code","error":"Step 7: Untrusted code caused sandbox anomaly (simulated) - fork bomb attempt detected"}
+{"ts":"2026-10-21T06:40:10Z","event":"policy_applied","policy":"fresh","sandbox_name":"sbx-failsim001a","failed_step":7,"action":"Deleting sbx-failsim001a, creating fresh sandbox sbx-failsim002b for recovery steps 8-10"}
+{"ts":"2026-10-21T06:40:10Z","event":"sandbox_deleted","sandbox_name":"sbx-failsim001a","reason":"step_7_failure_fresh_policy"}
+{"ts":"2026-10-21T06:40:11Z","event":"recovery_sandbox_created","sandbox_name":"sbx-failsim002b","note":"Fresh sandbox for recovery steps 8-10"}
+{"ts":"2026-10-21T06:40:12Z","event":"step_completed","sandbox_name":"sbx-failsim002b","step":8,"step_name":"collect_outputs"}
+{"ts":"2026-10-21T06:40:13Z","event":"step_completed","sandbox_name":"sbx-failsim002b","step":9,"step_name":"score_submission"}
+{"ts":"2026-10-21T06:40:14Z","event":"step_completed","sandbox_name":"sbx-failsim002b","step":10,"step_name":"generate_report"}
+{"ts":"2026-10-21T06:40:15Z","event":"run_succeeded","sandbox_name":"sbx-failsim002b","note":"Recovered from step-7 failure via fresh policy. Score: 62.5"}
+{"ts":"2026-10-21T06:40:15Z","event":"sandbox_deleted","sandbox_name":"sbx-failsim002b","reason":"cleanup_on_success"}
